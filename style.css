@@ -1,63 +1,130 @@
 body {
-    background-image: url("./images/badhon-ebrahim-I4rZopii478-unsplash.jpg");
+	background-image: url("./images/pietro-jeng-n6B49lTx7NM-unsplash_edited.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-    background-size: cover;
-	color: white;
-    font-family: "Coda", cursive;
-    margin: 0;
+	background-size: cover;
+	color: rgb(231, 231, 231);
+	font-family: "Coda", cursive;
+	margin: 0;
 }
+
+/* Nav Bar */
 
 header {
-    background-color: rgb(221, 221, 221);
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    top: 0px;
+	background-color: black;
+	border-bottom: 3px outset rgb(150, 150, 150);
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0;
 }
 
-main {
-    margin: 20px;
+ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	height: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+li {
+	flex-grow: 1;
+}
+
+li a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(156, 156, 156);
+	text-decoration: none;
+	height: 100%;
+}
+
+li a:hover {
+	color: white;
 }
 
 hr {
-    margin-top: 80px;
+	border-color: rgb(87, 87, 87);
+	margin: 7px 10px;
 }
 
-.section {
-    margin-left: 270px;
-    margin-top: 70px;
-}
+/* Generic */
 
-#name-title {
-    font-weight: 400;
-    font-size: 5rem;
-    padding: 10px;
-    padding-bottom: 0;
+main {
+    max-width: 1300px;
     margin: 0 auto;
 }
 
-#name-small {
+.section-title {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 10px;
     font-weight: 400;
-    font-size: 1.5rem;
-    padding: 0px;
-    margin: 0 auto;
-    margin-left: 280px;
-    margin-top: -20px;
+    font-size: 3rem;
+    background-color: rgb(58, 58, 58);
+    border: 3px solid rgb(32, 32, 32);
+    border-radius: 10px;
 }
 
-#me {
-    position: fixed;
-    top: 20px;
-    width: 250px;
-    border-radius: 50%;
-    opacity: 1;
-    transform-origin: top left;
-    transition: opacity 500ms, transform 500ms;
+/* Title Section */
+
+#home {
+	display: flex;
+    align-items: center;
+    margin: 153px 0px 100px 140px;
 }
 
-p {
-    margin: 80px 40px;
-    font-size: 2rem;
+#title-main {
+	font-weight: 400;
+	font-size: 5rem;
+	margin: 0 auto;
+	text-shadow: 2px 2px 4px black;
+}
+
+#title-small {
+	font-weight: 400;
+	font-size: 1.7rem;
+	margin: -20px -20px 0px 0px;
+	text-align: end;
+}
+
+#circle-picture {
+	width: 250px;
+	border-radius: 50%;
+	border: 3px outset white;
+	margin-right: 20px;
+}
+
+/* About Section */
+
+#about-me {
+    margin: 0 40px 40px 40px;
+    padding: 30px;
+    background-color: rgba(58, 58, 58, 0.9);
+    border: 3px solid rgb(32, 32, 32);
+    border-radius: 10px;
+}
+
+#about-title {
+    margin-bottom: -30px;
+    margin-left: 20px;
+}
+
+#about-code {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.code-indent {
+    margin-left: 30px;
+}
+
+
+/* Projects Section */
+
+#projects {
+    
 }
