@@ -27,10 +27,16 @@ p {
 	display: inline-block;
 	padding: 5px 10px;
 	font-size: 3rem;
-	background-color: rgb(41, 41, 41);
-	border: 3px solid rgb(17, 17, 17);
+	color: rgb(41, 41, 41);
+	background-color: rgba(145, 145, 145, 0.5);
 	border-radius: 10px;
 	text-shadow: 2px 2px 2px black;
+	position: relative;
+}
+
+.section-title span {
+	position: absolute;
+	top: -70px;
 }
 
 .d-flex-center {
@@ -46,6 +52,10 @@ p {
 	align-items: center;
 }
 
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
 .btn {
 	border: none;
 	font: 400 1.1rem "Coda";
@@ -54,6 +64,13 @@ p {
 	color: rgb(231, 231, 231);
 	text-decoration: none;
 	text-align: center;
+}
+
+.divider {
+	border-width: 3px;
+	opacity: 0.5;
+	margin: 0 auto;
+	width: 90%;
 }
 
 /* Nav Bar */
@@ -94,7 +111,7 @@ header {
 	color: white;
 }
 
-hr {
+.nav-hr {
 	border-color: rgb(87, 87, 87);
 	margin: 7px 15px;
 }
@@ -108,7 +125,7 @@ main {
 
 /* Title Section */
 
-#home {
+#jumbotron {
 	display: flex;
 	align-items: center;
 	margin: 153px 0px 100px 140px;
@@ -134,17 +151,15 @@ main {
 
 /* About Section */
 
-#about-me {
+#about-me-section {
 	margin: 0 40px 40px 40px;
 	padding: 30px;
 	background-color: rgba(41, 41, 41, 0.8);
-	border: 3px solid rgb(17, 17, 17);
 	border-radius: 10px;
 }
 
-#about-title {
-	margin-bottom: -30px;
-	margin-left: 20px;
+#about-me-title {
+	margin: 40px 0 10px 10px;
 }
 
 #about-code {
@@ -159,11 +174,13 @@ main {
 /* Projects Section */
 
 #projects-title {
-	padding: 5px 140px;
-	margin-bottom: -20px;
+	width: 50%;
+	padding: 5px;
+	text-align: center;
+	margin-top: 40px;
 }
 
-#projects {
+#projects-section {
 	margin: 40px;
 }
 
@@ -184,7 +201,7 @@ main {
 }
 
 .port-grp {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 .port-snapshot-grp {
@@ -196,6 +213,7 @@ main {
 	background-size: 100% 100%;
 	overflow: hidden;
 	flex-shrink: 0;
+	box-shadow: 0 0 0px 3px rgb(151, 151, 151);
 }
 
 .port-buttons {
@@ -225,7 +243,6 @@ main {
 
 .port-text-section {
 	background-color: rgba(41, 41, 41, 0.8);
-	border: 3px solid rgb(17, 17, 17);
 	border-radius: 10px;
 	padding: 20px 30px 30px 40px;
 	margin-left: -15px;
@@ -234,6 +251,7 @@ main {
 .port-text {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .port-text-about {
@@ -243,10 +261,11 @@ main {
 
 .port-text-built {
 	margin-left: 30px;
+	align-self: start;
 }
 
 .project-title {
-	font-size: 1.4rem;
+	font-size: 1.7rem;
 	text-align: center;
 	text-shadow: 2px 2px 2px black;
 }
@@ -260,4 +279,58 @@ main {
 .built-with-list {
 	margin: 0 auto;
 	padding-left: 20px;
+}
+
+/* Contact Me */
+
+#contact-title {
+	margin: 40px 0 10px 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 949px) {
+	.port-grp {
+		flex-wrap: wrap;
+	}
+	.port-text-section {
+		margin-left: 0px;
+		margin-top: -15px;
+		padding: 30px;
+		max-width: 525px;
+	}
+	#projects-title {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 584px) {
+	.port-snapshot-grp {
+		width: 100%;
+		height: 0;
+		padding-top: 65%;
+	}
+	#projects-title {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 499px) {
+	.port-text {
+		justify-content: start;
+		flex-wrap: wrap;
+	}
+	.port-text-about {
+		flex-basis: 100%;
+		margin-bottom: 20px;
+	}
+	.port-text-built {
+		margin-left: 0px;
+	}
+	#projects-section {
+		margin: 20px;
+	}
+	#projects-title {
+		margin-bottom: 0px;
+	}
 }

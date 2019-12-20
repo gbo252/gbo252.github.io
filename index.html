@@ -14,19 +14,20 @@
 	<body>
 		<header>
 			<ul id="nav-list">
-				<hr />
+				<hr class="nav-hr" />
 				<li class="list-item"><a href="#home">Home</a></li>
-				<hr />
+				<hr class="nav-hr" />
 				<li class="list-item"><a href="#about-me">About Me</a></li>
-				<hr />
+				<hr class="nav-hr" />
 				<li class="list-item"><a href="#projects">Projects</a></li>
-				<hr />
+				<hr class="nav-hr" />
 				<li class="list-item"><a href="#contact">Contact</a></li>
-				<hr />
+				<hr class="nav-hr" />
 			</ul>
 		</header>
+		<span id="home">&nbsp;</span>
 		<main>
-			<div id="home">
+			<div id="jumbotron">
 				<img id="circle-picture" src="images/guy_owen.jpg" />
 				<div>
 					<h1 id="title-main">Guy Owen</h1>
@@ -35,8 +36,9 @@
 					</h2>
 				</div>
 			</div>
-			<h2 id="about-title" class="section-title">About Me</h2>
-			<div id="about-me">
+			<hr class="divider" />
+			<h2 id="about-me-title" class="section-title"><span id="about-me"></span>About Me</h2>
+			<div id="about-me-section">
 				<code id="about-code">
 					<strong style="font-size: 1.3rem;">const info</strong> = {
 					<div class="code-indent">
@@ -61,11 +63,71 @@
 					</div>
 				</code>
 			</div>
+			<hr class="divider" />
 			<div class="d-flex-center">
-				<h2 id="projects-title" class="section-title">Projects</h2>
+				<h2 id="projects-title" class="section-title"><span id="projects"></span>Projects</h2>
 			</div>
-			<div id="projects">
+			<div id="projects-section">
 				<div class="port-grp d-flex-center">
+					<div id="flash" class="port-snapshot-grp">
+						<div class="port-buttons d-flex-center">
+							<a
+								href="https://github.com/gbo252/flash_cards"
+								role="button"
+								target="_blank"
+								class="btn btn-portfolio btn-git"
+								>Github</a
+							>
+							<a
+								href="https://flash-cards-online.herokuapp.com/"
+								role="button"
+								target="_blank"
+								class="btn btn-portfolio btn-live"
+							>
+								Live Site
+							</a>
+						</div>
+					</div>
+					<div class="port-text-section">
+						<h3 class="project-title">
+							Flash Cards Online
+						</h3>
+						<br />
+						<div class="port-text">
+							<div class="port-text-about">
+								<h4 class="project-title-small">
+									About This Project
+								</h4>
+								<p>
+									A full-stack web application that makes
+									building flash cards in distinct categories
+									easy! Sign in, create a category and start
+									making flash cards consisting of a front and
+									back which can be hidden/revealed. This was
+									designed to be used for note-taking and
+									revision purposes. The mongoDB back-end
+									means you can login and retrieve your flash
+									cards from anywhere!
+								</p>
+							</div>
+							<div class="port-text-built">
+								<h4 class="project-title-small">Built With</h4>
+								<ul class="built-with-list">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+									<li>Bootstrap</li>
+									<li>React</li>
+									<li>Redux</li>
+									<li>Express</li>
+									<li>Mongoose</li>
+									<li>Node</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="port-grp row-reverse d-flex-center">
 					<div id="netflix" class="port-snapshot-grp">
 						<div class="port-buttons d-flex-center">
 							<a
@@ -120,7 +182,112 @@
 						</div>
 					</div>
 				</div>
+				<div class="port-grp d-flex-center">
+					<div id="quiz" class="port-snapshot-grp">
+						<div class="port-buttons d-flex-center">
+							<a
+								href="https://github.com/gbo252/quiz"
+								role="button"
+								target="_blank"
+								class="btn btn-portfolio btn-git"
+								>Github</a
+							>
+							<a
+								href="http://quiz-knowledge.herokuapp.com/"
+								role="button"
+								target="_blank"
+								class="btn btn-portfolio btn-live"
+							>
+								Live Site
+							</a>
+						</div>
+					</div>
+					<div class="port-text-section">
+						<h3 class="project-title">
+							QUIZ
+						</h3>
+						<br />
+						<div class="port-text">
+							<div class="port-text-about">
+								<h4 class="project-title-small">
+									About This Project
+								</h4>
+								<p>
+									A simple, short, fun, multiple-choice quiz!
+									A web quiz where you choose a category and
+									answer 5 multiple-choice questions,
+									revealing your score at the end. It queries
+									an API database of trivia questions in your
+									chosen category to retrieve the questions
+									and answers.
+								</p>
+							</div>
+							<div class="port-text-built">
+								<h4 class="project-title-small">Built With</h4>
+								<ul class="built-with-list">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+									<li>Bootstrap</li>
+									<li>React</li>
+									<li>Redux</li>
+									<li>Node</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="port-grp row-reverse d-flex-center">
+					<div id="men" class="port-snapshot-grp">
+						<div class="port-buttons d-flex-center">
+							<a
+								href="https://github.com/gbo252/menat107"
+								role="button"
+								target="_blank"
+								class="btn btn-portfolio btn-git"
+								>Github</a
+							>
+							<a
+								href="https://www.menat107.co.uk/"
+								role="button"
+								target="_blank"
+								class="btn btn-portfolio btn-live"
+							>
+								Live Site
+							</a>
+						</div>
+					</div>
+					<div class="port-text-section">
+						<h3 class="project-title">
+							Men @ 107
+						</h3>
+						<br />
+						<div class="port-text">
+							<div class="port-text-about">
+								<h4 class="project-title-small">
+									About This Project
+								</h4>
+								<p>
+									A static website for a men's gift shop
+									called "Men @ 107" based in Muswell Hill,
+									London.
+								</p>
+							</div>
+							<div class="port-text-built">
+								<h4 class="project-title-small">Built With</h4>
+								<ul class="built-with-list">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+									<li>Handlebars</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+			<hr class="divider" />
+			<h2 id="contact-title" class="section-title"><span id="contact"></span>Contact Me</h2>
 		</main>
 		<!-- <script type="text/javascript" src="./index.js"></script> -->
 	</body>
