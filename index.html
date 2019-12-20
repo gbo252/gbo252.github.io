@@ -13,15 +13,15 @@
 	</head>
 	<body>
 		<header>
-			<ul>
+			<ul id="nav-list">
 				<hr />
-				<li><a href="#home">Home</a></li>
+				<li class="list-item"><a href="#home">Home</a></li>
 				<hr />
-				<li><a href="#about-me">About Me</a></li>
+				<li class="list-item"><a href="#about-me">About Me</a></li>
 				<hr />
-				<li><a href="#projects">Projects</a></li>
+				<li class="list-item"><a href="#projects">Projects</a></li>
 				<hr />
-				<li><a href="#contact">Contact</a></li>
+				<li class="list-item"><a href="#contact">Contact</a></li>
 				<hr />
 			</ul>
 		</header>
@@ -57,7 +57,7 @@
 						<p style="line-height: 5px; margin: 0;">&nbsp;</p>
 						"Hello! I'm Guy, a developer with a keen interest in
 						computers, web development, full-stack, JavaScript,
-						React and learning about technology.";
+						React and learning new technology.";
 					</div>
 				</code>
 			</div>
@@ -65,40 +65,63 @@
 				<h2 id="projects-title" class="section-title">Projects</h2>
 			</div>
 			<div id="projects">
-				<div id="flash" class="port-group dark">
-					<div id="port-buttons" class="d-flex-center dark">
-						<button class="btn btn-portfolio btn-git dark">Github</button>
-						<button class="btn btn-portfolio btn-live">
-							Live Site
-						</button>
+				<div class="port-grp d-flex-center">
+					<div id="netflix" class="port-snapshot-grp">
+						<div class="port-buttons d-flex-center">
+							<a
+								href="https://github.com/gbo252/movie_finder"
+								role="button"
+								target="_blank"
+								class="btn btn-portfolio btn-git"
+								>Github</a
+							>
+							<a
+								href="https://netflix-random-movie.herokuapp.com/"
+								role="button"
+								target="_blank"
+								class="btn btn-portfolio btn-live"
+							>
+								Live Site
+							</a>
+						</div>
 					</div>
-				</div>
-				<div id="netflix" class="port-group light">
-					<div id="port-buttons" class="d-flex-center light">
-						<button class="btn btn-portfolio btn-git light">Github</button>
-						<button class="btn btn-portfolio btn-live">
-							Live Site
-						</button>
-					</div>
-				</div>
-				<div id="quiz" class="port-group light">
-					<div id="port-buttons" class="d-flex-center light">
-						<button class="btn btn-portfolio btn-git light">Github</button>
-						<button class="btn btn-portfolio btn-live">
-							Live Site
-						</button>
-					</div>
-				</div>
-				<div id="men" class="port-group dark">
-					<div id="port-buttons" class="d-flex-center dark">
-						<button class="btn btn-portfolio btn-git dark">Github</button>
-						<button class="btn btn-portfolio btn-live">
-							Live Site
-						</button>
+					<div class="port-text-section">
+						<h3 class="project-title">
+							Netflix Random Movie Generator
+						</h3>
+						<br />
+						<div class="port-text">
+							<div class="port-text-about">
+								<h4 class="project-title-small">
+									About This Project
+								</h4>
+								<p>
+									A web application that queries an API of
+									up-to-date Netflix movies and displays a
+									randomly selected movie. This project aims
+									to make choosing a film from Netflix easier,
+									by displaying one film at a time. This
+									removes the issue of "too much choice" when
+									scanning through the hundreds of available
+									films on Netflix.
+								</p>
+							</div>
+							<div class="port-text-built">
+								<h4 class="project-title-small">Built With</h4>
+								<ul class="built-with-list">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+									<li>Bootstrap</li>
+									<li>React</li>
+									<li>Node</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
-		<script type="text/javascript" src="./index.js"></script>
+		<!-- <script type="text/javascript" src="./index.js"></script> -->
 	</body>
 </html>

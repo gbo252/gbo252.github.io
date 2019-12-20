@@ -1,3 +1,5 @@
+/* Generic */
+
 body {
 	background-image: url("./images/pietro-jeng-n6B49lTx7NM-unsplash_edited.jpg");
 	background-position: center;
@@ -9,65 +11,26 @@ body {
 	margin: 0;
 }
 
-/* Nav Bar */
-
-header {
-	background-color: black;
-	border-bottom: 3px outset rgb(150, 150, 150);
-	height: 50px;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	z-index: 10;
-}
-
-ul {
-	display: flex;
-	list-style-type: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
 	padding: 0;
-	height: 100%;
-	max-width: 1300px;
-	margin: 0 auto;
-}
-
-li {
-	flex-grow: 1;
-}
-
-li a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: rgb(156, 156, 156);
-	text-decoration: none;
-	height: 100%;
-}
-
-li a:hover {
-	color: white;
-}
-
-hr {
-	border-color: rgb(87, 87, 87);
-	margin: 7px 15px;
-}
-
-/* Generic */
-
-main {
-	max-width: 1300px;
-	margin: 0 auto;
+	font-weight: 400;
 }
 
 .section-title {
 	display: inline-block;
-	margin: 0;
 	padding: 5px 10px;
-	font-weight: 400;
 	font-size: 3rem;
 	background-color: rgb(41, 41, 41);
 	border: 3px solid rgb(17, 17, 17);
 	border-radius: 10px;
+	text-shadow: 2px 2px 2px black;
 }
 
 .d-flex-center {
@@ -89,6 +52,58 @@ main {
 	padding: 3px 7px;
 	cursor: pointer;
 	color: rgb(231, 231, 231);
+	text-decoration: none;
+	text-align: center;
+}
+
+/* Nav Bar */
+
+header {
+	background-color: black;
+	border-bottom: 3px outset rgb(150, 150, 150);
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+#nav-list {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	height: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.list-item {
+	flex-grow: 1;
+}
+
+.list-item a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(156, 156, 156);
+	text-decoration: none;
+	height: 100%;
+}
+
+.list-item a:hover {
+	color: white;
+}
+
+hr {
+	border-color: rgb(87, 87, 87);
+	margin: 7px 15px;
+}
+
+/* Main Section */
+
+main {
+	max-width: 1300px;
+	margin: 0 auto;
 }
 
 /* Title Section */
@@ -100,14 +115,11 @@ main {
 }
 
 #title-main {
-	font-weight: 400;
 	font-size: 5rem;
-	margin: 0 auto;
 	text-shadow: 2px 2px 4px black;
 }
 
 #title-small {
-	font-weight: 400;
 	font-size: 1.7rem;
 	margin: -20px -20px 0px 0px;
 	text-align: end;
@@ -147,7 +159,8 @@ main {
 /* Projects Section */
 
 #projects-title {
-	padding: 5px 130px;
+	padding: 5px 140px;
+	margin-bottom: -20px;
 }
 
 #projects {
@@ -170,39 +183,33 @@ main {
 	background-image: url("./images/quiz.png");
 }
 
-.port-group {
-	position: relative;
-	width: 450px;
-	height: 285px;
-	border-width: 3px;
-	border-style: solid;
-	border-radius: 10px;
-	background-size: 100% 100%;
-	overflow: hidden;
+.port-grp {
 	margin-bottom: 30px;
 }
 
-#port-buttons {
+.port-snapshot-grp {
+	position: relative;
+	width: 450px;
+	height: 285px;
+	border: 3px solid rgb(83, 83, 83);
+	border-radius: 10px;
+	background-size: 100% 100%;
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+.port-buttons {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	border-top-width: 3px;
-	border-top-style: solid;
-}
-
-.dark {
-	border-color: rgb(39, 39, 39);
-}
-
-.light {
-	border-color: rgb(70, 70, 70);
+	border-top: 3px solid rgb(83, 83, 83);
 }
 
 .btn-portfolio {
 	flex: 1 0 auto;
 	line-height: 40px;
 	letter-spacing: 0.1rem;
-	background-color: rgba(41, 41, 41, 0.8);
+	background-color: rgba(12, 12, 12, 0.9);
 	text-shadow: 2px 2px 2px black;
 }
 
@@ -213,6 +220,44 @@ main {
 }
 
 .btn-git {
-	border-right-width: 3px;
-	border-right-style: solid;
+	border-right: 3px solid rgb(83, 83, 83);
+}
+
+.port-text-section {
+	background-color: rgba(41, 41, 41, 0.8);
+	border: 3px solid rgb(17, 17, 17);
+	border-radius: 10px;
+	padding: 20px 30px 30px 40px;
+	margin-left: -15px;
+}
+
+.port-text {
+	display: flex;
+	justify-content: space-around;
+}
+
+.port-text-about {
+	flex-basis: 70%;
+	text-align: justify;
+}
+
+.port-text-built {
+	margin-left: 30px;
+}
+
+.project-title {
+	font-size: 1.4rem;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+}
+
+.project-title-small {
+	font-size: 1.1rem;
+	text-decoration: underline;
+	margin-left: -10px;
+}
+
+.built-with-list {
+	margin: 0 auto;
+	padding-left: 20px;
 }
