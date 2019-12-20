@@ -83,7 +83,7 @@ main {
 	align-items: center;
 }
 
-button {
+.btn {
 	border: none;
 	font: 400 1.1rem "Coda";
 	padding: 3px 7px;
@@ -174,7 +174,8 @@ button {
 	position: relative;
 	width: 450px;
 	height: 285px;
-	border: 3px solid rgb(39, 39, 39);
+	border-width: 3px;
+	border-style: solid;
 	border-radius: 10px;
 	background-size: 100% 100%;
 	overflow: hidden;
@@ -185,26 +186,33 @@ button {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	border-top: 3px solid rgb(39, 39, 39);
+	border-top-width: 3px;
+	border-top-style: solid;
+}
+
+.dark {
+	border-color: rgb(39, 39, 39);
+}
+
+.light {
+	border-color: rgb(70, 70, 70);
 }
 
 .btn-portfolio {
 	flex: 1 0 auto;
-    line-height: 40px;
-    letter-spacing: 0.1rem;
+	line-height: 40px;
+	letter-spacing: 0.1rem;
+	background-color: rgba(41, 41, 41, 0.8);
+	text-shadow: 2px 2px 2px black;
 }
 
-.btn-portfolio-dark {
-    background-color: rgba(41, 41, 41, 0.8);
-    text-shadow: 2px 2px 2px black;
-}
-
-.btn-portfolio-light {
+.btn-portfolio:hover {
+	background-color: rgba(231, 231, 231, 0.8);
 	color: black;
-    background-color: rgba(170, 170, 170, 0.8);
-    text-shadow: 2px 2px 2px rgb(85, 85, 85);
+	text-shadow: 2px 2px 2px rgb(112, 112, 112);
 }
 
 .btn-git {
-	border-right: 3px solid rgb(39, 39, 39);
+	border-right-width: 3px;
+	border-right-style: solid;
 }
