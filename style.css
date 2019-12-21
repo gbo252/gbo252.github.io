@@ -1,11 +1,11 @@
 /* Generic */
 
 body {
-	background-image: url("./images/pietro-jeng-n6B49lTx7NM-unsplash_edited.jpg");
+	background-image: url("./images/background_HR.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: auto;
 	color: rgb(231, 231, 231);
 	font-family: "Coda", cursive;
 	margin: 0;
@@ -213,7 +213,7 @@ main {
 }
 
 #quiz {
-	background-image: url("./images/quiz.png");
+	background-image: url("./images/quiz.jpg");
 }
 
 .port-grp {
