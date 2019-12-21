@@ -6,7 +6,6 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	-webkit-background-size: cover;
 	color: rgb(231, 231, 231);
 	font-family: "Coda", cursive;
 	margin: 0;
@@ -405,9 +404,9 @@ footer a {
 }
 
 @media only screen and (max-width: 849px) {
-	/* body {
-		background-image: url("./images/background_mobile.jpg");
-	} */
+	body {
+		background-attachment: scroll;
+	}
 	#jumbotron {
 		flex-wrap: wrap;
 		height: 460px;
