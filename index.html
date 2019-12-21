@@ -25,6 +25,7 @@
 				<hr class="nav-hr nav-hr-ends" />
 			</ul>
 		</header>
+
 		<span id="home">&nbsp;</span>
 		<main>
 			<div id="jumbotron" class="d-flex-center">
@@ -37,13 +38,15 @@
 				</div>
 				<div id="img-balance"></div>
 			</div>
+
 			<hr class="divider" />
+
 			<div class="d-flex-start center-title">
-				<h2 id="about-me-title" class="section-title">
+				<h2 class="section-title">
 					<span id="about-me"></span>About Me
 				</h2>
 			</div>
-			<div id="about-me-section">
+			<div class="section">
 				<code id="about-code">
 					<strong style="font-size: 1.3rem;">const guy</strong> =
 					<div class="code-indent">
@@ -68,7 +71,9 @@
 					};
 				</code>
 			</div>
+
 			<hr class="divider" />
+
 			<div class="d-flex-center">
 				<h2 id="projects-title" class="section-title">
 					<span id="projects"></span>Projects
@@ -298,10 +303,61 @@
 					</div>
 				</div>
 			</div>
+
 			<hr class="divider" />
-			<h2 id="contact-title" class="section-title">
-				<span id="contact"></span>Contact Me
-			</h2>
+
+			<div id="contact-section" class="d-flex-center">
+				<h2 id="contact-title" class="section-title">
+					<span id="contact"></span>Contact Me
+				</h2>
+				<div id="contact-form" class="section">
+					<div id="form-group">
+						<form
+							action="https://mailthis.to/gbo252"
+							method="POST"
+							class="d-flex-col-center"
+						>
+							<input
+								class="form-entry"
+								type="text"
+								name="name"
+								placeholder="Name"
+								required
+							/>
+							<input
+								class="form-entry"
+								type="email"
+								name="_replyto"
+								placeholder="Email"
+								required
+							/>
+							<textarea
+								class="form-entry"
+								name="message"
+								placeholder="Message"
+								rows="6"
+								required
+							></textarea>
+							<input
+								type="hidden"
+								name="_subject"
+								value="Contact Form - Portfolio"
+							/>
+							<input
+								type="hidden"
+								name="_after"
+								value="http://127.0.0.1:5500/"
+							/>
+							<input type="hidden" name="_honeypot" value="" />
+							<input
+								class="form-entry submit"
+								type="submit"
+								value="<Send>"
+							/>
+						</form>
+					</div>
+				</div>
+			</div>
 		</main>
 		<!-- <script type="text/javascript" src="./index.js"></script> -->
 	</body>

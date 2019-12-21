@@ -17,26 +17,12 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+input,
+textarea {
 	margin: 0;
 	padding: 0;
 	font-weight: 400;
-}
-
-.section-title {
-	display: inline-block;
-	padding: 5px 10px;
-	font-size: 3rem;
-	color: rgb(180, 180, 180);
-	background-color: rgba(145, 145, 145, 0.5);
-	border-radius: 10px;
-	text-shadow: 2px 2px 2px black;
-	position: relative;
-}
-
-.section-title span {
-	position: absolute;
-	top: -70px;
 }
 
 .d-flex-center {
@@ -129,6 +115,31 @@ main {
 	margin: 0 auto;
 }
 
+.section {
+	margin: 0 40px 40px 40px;
+	padding: 30px;
+	background-color: rgba(41, 41, 41, 0.8);
+	border-radius: 10px;
+}
+
+.section-title {
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 3rem;
+	color: rgb(180, 180, 180);
+	background-color: rgba(145, 145, 145, 0.5);
+	border-radius: 10px;
+	text-shadow: 2px 2px 2px black;
+	position: relative;
+	margin: 40px 0 40px 20px;
+	white-space: nowrap;
+}
+
+.section-title span {
+	position: absolute;
+	top: -70px;
+}
+
 /* Title Section */
 
 #jumbotron {
@@ -167,17 +178,6 @@ main {
 
 /* About Section */
 
-#about-me-section {
-	margin: 0 40px 40px 40px;
-	padding: 30px;
-	background-color: rgba(41, 41, 41, 0.8);
-	border-radius: 10px;
-}
-
-#about-me-title {
-	margin: 40px 0 40px 10px;
-}
-
 #about-code {
 	font-size: 17px;
 	line-height: 26px;
@@ -193,7 +193,7 @@ main {
 	width: 50%;
 	padding: 5px;
 	text-align: center;
-	margin-top: 40px;
+	margin: 40px 0 0 0;
 }
 
 #projects-section {
@@ -308,8 +308,54 @@ main {
 
 /* Contact Me */
 
+#contact-section {
+	margin: 40px;
+}
+
 #contact-title {
-	margin: 40px 0 10px 10px;
+	margin: 0 40px 0 0;
+}
+
+#contact-form {
+	width: 80%;
+	max-width: 500px;
+	margin: 0;
+}
+
+#form-group {
+	width: 100%;
+}
+
+.form-entry {
+	width: 98%;
+	font-family: "Coda", cursive;
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 7px;
+	margin-bottom: 8px;
+	background-color: rgba(12, 12, 12, 0.9);
+	border-radius: 5px;
+	border: none;
+	color: rgb(231, 231, 231);
+	outline: none;
+}
+
+.submit {
+	padding: 8px 15px;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 0;
+	width: 80%;
+	font-size: 1.1rem;
+	text-shadow: 2px 2px 2px black;
+}
+
+.submit:hover {
+	background-color: rgb(224, 224, 224);
+	color: black;
+	text-shadow: 2px 2px 2px rgb(87, 87, 87);
+	border-color: rgb(187, 187, 187);
 }
 
 /* Media Queries */
@@ -350,9 +396,18 @@ main {
 	.center-title {
 		justify-content: center;
 	}
-	#about-me-title {
+	.section-title {
 		margin-left: 0;
 		margin-bottom: 20px;
+	}
+	#contact-section {
+		flex-wrap: wrap;
+	}
+	#contact-title {
+		margin: 0 0 20px 0;
+	}
+	#contact-form {
+		width: 100%;
 	}
 }
 
@@ -371,7 +426,7 @@ main {
 	#title-main {
 		font-size: 3.5rem;
 	}
-	#about-me-section {
+	.section {
 		margin: 0 20px 40px 20px;
 		padding: 20px;
 	}
@@ -395,5 +450,8 @@ main {
 	}
 	.port-text-built {
 		margin-left: 0px;
+	}
+	#contact-section {
+		margin: 40px 20px;
 	}
 }
