@@ -358,6 +358,24 @@ main {
 	border-color: rgb(187, 187, 187);
 }
 
+/* Footer */
+
+footer {
+	border-top: 3px inset rgb(150, 150, 150);
+	margin-top: 60px;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+footer p {
+	padding: 7px 15px;
+	color: gray;
+	text-align: end;
+}
+
+footer a {
+	color: inherit;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 1339px) {
