@@ -14,7 +14,7 @@
 	<body>
 		<header>
 			<ul id="nav-list">
-				<hr class="nav-hr" />
+				<hr class="nav-hr nav-hr-ends" />
 				<li class="list-item"><a href="#home">Home</a></li>
 				<hr class="nav-hr" />
 				<li class="list-item"><a href="#about-me">About Me</a></li>
@@ -22,24 +22,38 @@
 				<li class="list-item"><a href="#projects">Projects</a></li>
 				<hr class="nav-hr" />
 				<li class="list-item"><a href="#contact">Contact</a></li>
-				<hr class="nav-hr" />
+				<hr class="nav-hr nav-hr-ends" />
 			</ul>
 		</header>
 		<span id="home">&nbsp;</span>
 		<main>
-			<div id="jumbotron">
+			<div id="jumbotron" class="d-flex-center">
 				<img id="circle-picture" src="images/guy_owen.jpg" />
-				<div>
+				<div id="title-grp">
 					<h1 id="title-main">Guy Owen</h1>
 					<h2 id="title-small">
 						<code>&lt;Web Developer /&gt;</code>
 					</h2>
 				</div>
+				<div id="img-balance"></div>
 			</div>
 			<hr class="divider" />
-			<h2 id="about-me-title" class="section-title"><span id="about-me"></span>About Me</h2>
+			<div class="d-flex-start center-title">
+				<h2 id="about-me-title" class="section-title">
+					<span id="about-me"></span>About Me
+				</h2>
+			</div>
 			<div id="about-me-section">
 				<code id="about-code">
+					<strong style="font-size: 1.3rem;">const guy</strong> =
+					<div class="code-indent">
+						<p style="line-height: 5px; margin: 0;">&nbsp;</p>
+						"Hello! I'm Guy, a developer with a keen interest in
+						computers, web development, full-stack, JavaScript,
+						React and learning new technology.";
+					</div>
+					<br />
+					<p style="line-height: 8px; margin: 0;">&nbsp;</p>
 					<strong style="font-size: 1.3rem;">const info</strong> = {
 					<div class="code-indent">
 						<p style="line-height: 5px; margin: 0;">&nbsp;</p>
@@ -52,20 +66,13 @@
 					</div>
 					<p style="line-height: 5px; margin: 0;">&nbsp;</p>
 					};
-					<br />
-					<p style="line-height: 8px; margin: 0;">&nbsp;</p>
-					<strong style="font-size: 1.3rem;">const moreInfo</strong> =
-					<div class="code-indent">
-						<p style="line-height: 5px; margin: 0;">&nbsp;</p>
-						"Hello! I'm Guy, a developer with a keen interest in
-						computers, web development, full-stack, JavaScript,
-						React and learning new technology.";
-					</div>
 				</code>
 			</div>
 			<hr class="divider" />
 			<div class="d-flex-center">
-				<h2 id="projects-title" class="section-title"><span id="projects"></span>Projects</h2>
+				<h2 id="projects-title" class="section-title">
+					<span id="projects"></span>Projects
+				</h2>
 			</div>
 			<div id="projects-section">
 				<div class="port-grp d-flex-center">
@@ -127,6 +134,7 @@
 						</div>
 					</div>
 				</div>
+				<hr class="proj-divider" />
 				<div class="port-grp row-reverse d-flex-center">
 					<div id="netflix" class="port-snapshot-grp">
 						<div class="port-buttons d-flex-center">
@@ -182,6 +190,7 @@
 						</div>
 					</div>
 				</div>
+				<hr class="proj-divider" />
 				<div class="port-grp d-flex-center">
 					<div id="quiz" class="port-snapshot-grp">
 						<div class="port-buttons d-flex-center">
@@ -237,6 +246,7 @@
 						</div>
 					</div>
 				</div>
+				<hr class="proj-divider" />
 				<div class="port-grp row-reverse d-flex-center">
 					<div id="men" class="port-snapshot-grp">
 						<div class="port-buttons d-flex-center">
@@ -270,7 +280,9 @@
 								<p>
 									A static website for a men's gift shop
 									called "Men @ 107" based in Muswell Hill,
-									London.
+									London. My first real-world project, putting
+									together everything I had learnt from HTML,
+									CSS and JavaScript so far.
 								</p>
 							</div>
 							<div class="port-text-built">
@@ -287,7 +299,9 @@
 				</div>
 			</div>
 			<hr class="divider" />
-			<h2 id="contact-title" class="section-title"><span id="contact"></span>Contact Me</h2>
+			<h2 id="contact-title" class="section-title">
+				<span id="contact"></span>Contact Me
+			</h2>
 		</main>
 		<!-- <script type="text/javascript" src="./index.js"></script> -->
 	</body>

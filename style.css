@@ -27,7 +27,7 @@ p {
 	display: inline-block;
 	padding: 5px 10px;
 	font-size: 3rem;
-	color: rgb(41, 41, 41);
+	color: rgb(180, 180, 180);
 	background-color: rgba(145, 145, 145, 0.5);
 	border-radius: 10px;
 	text-shadow: 2px 2px 2px black;
@@ -42,6 +42,12 @@ p {
 .d-flex-center {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+}
+
+.d-flex-start {
+	display: flex;
+	justify-content: start;
 	align-items: center;
 }
 
@@ -113,7 +119,7 @@ header {
 
 .nav-hr {
 	border-color: rgb(87, 87, 87);
-	margin: 7px 15px;
+	margin: 7px 0px;
 }
 
 /* Main Section */
@@ -126,14 +132,18 @@ main {
 /* Title Section */
 
 #jumbotron {
-	display: flex;
-	align-items: center;
-	margin: 153px 0px 100px 140px;
+	height: 560px;
+	margin: 40px;
+}
+
+#title-grp {
+	margin: 0 20px;
 }
 
 #title-main {
 	font-size: 5rem;
 	text-shadow: 2px 2px 4px black;
+	white-space: nowrap;
 }
 
 #title-small {
@@ -146,7 +156,13 @@ main {
 	width: 250px;
 	border-radius: 50%;
 	border: 3px outset white;
-	margin-right: 20px;
+	margin: 0 20px;
+}
+
+#img-balance {
+	width: 256px;
+	margin: 0 20px;
+	flex-shrink: 1;
 }
 
 /* About Section */
@@ -159,7 +175,7 @@ main {
 }
 
 #about-me-title {
-	margin: 40px 0 10px 10px;
+	margin: 40px 0 40px 10px;
 }
 
 #about-code {
@@ -281,6 +297,15 @@ main {
 	padding-left: 20px;
 }
 
+.proj-divider {
+	display: none;
+	width: 80%;
+	max-width: 300px;
+	border-width: 2px;
+	border-style: dotted;
+	margin-bottom: 25px;
+}
+
 /* Contact Me */
 
 #contact-title {
@@ -289,9 +314,19 @@ main {
 
 /* Media Queries */
 
+@media only screen and (max-width: 1339px) {
+	.nav-hr-ends {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 949px) {
 	.port-grp {
 		flex-wrap: wrap;
+		margin-bottom: 25px;
+	}
+	.proj-divider {
+		display: block;
 	}
 	.port-text-section {
 		margin-left: 0px;
@@ -301,6 +336,23 @@ main {
 	}
 	#projects-title {
 		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 849px) {
+	#jumbotron {
+		flex-wrap: wrap;
+		height: 460px;
+	}
+	#img-balance {
+		display: none;
+	}
+	.center-title {
+		justify-content: center;
+	}
+	#about-me-title {
+		margin-left: 0;
+		margin-bottom: 20px;
 	}
 }
 
@@ -316,6 +368,23 @@ main {
 }
 
 @media only screen and (max-width: 499px) {
+	#title-main {
+		font-size: 3.5rem;
+	}
+	#about-me-section {
+		margin: 0 20px 40px 20px;
+		padding: 20px;
+	}
+	#about-code {
+		font-size: 16px;
+		line-height: 23px;
+	}
+	#projects-section {
+		margin: 20px;
+	}
+	#projects-title {
+		margin-bottom: 0px;
+	}
 	.port-text {
 		justify-content: start;
 		flex-wrap: wrap;
@@ -326,11 +395,5 @@ main {
 	}
 	.port-text-built {
 		margin-left: 0px;
-	}
-	#projects-section {
-		margin: 20px;
-	}
-	#projects-title {
-		margin-bottom: 0px;
 	}
 }
