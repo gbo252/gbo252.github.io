@@ -157,7 +157,17 @@ main {
 	margin: 40px;
 }
 
+#circle-picture {
+	width: 250px;
+	border-radius: 50%;
+	border: 3px outset white;
+	margin: 0 20px;
+}
+
 #title-grp {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 	margin: 0 20px;
 }
 
@@ -167,23 +177,32 @@ main {
 	white-space: nowrap;
 }
 
-#title-small {
-	font-size: 1.7rem;
-	margin: -20px -20px 0px 0px;
-	text-align: end;
+#title-small-grp {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	margin: -20px -20px 0 0;
 }
 
-#circle-picture {
-	width: 250px;
-	border-radius: 50%;
-	border: 3px outset white;
-	margin: 0 20px;
+#title-small {
+	font-size: 1.7rem;
 }
 
 #img-balance {
 	width: 256px;
 	margin: 0 20px;
 	flex-shrink: 1;
+}
+
+.icon {
+	font-size: 2rem;
+	margin: 0 2px;
+	color: rgba(231, 231, 231, 0.5);
+	cursor: pointer;
+}
+
+.icon:hover {
+	color: rgb(231, 231, 231);
 }
 
 /* About Section */
