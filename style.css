@@ -201,6 +201,10 @@ main {
 	cursor: pointer;
 }
 
+#contact-section .icon {
+	font-size: 4rem;
+}
+
 .icon:hover {
 	color: rgb(231, 231, 231);
 }
@@ -342,7 +346,7 @@ main {
 }
 
 #contact-title {
-	margin: 0 40px 0 0;
+	margin: 0 40px;
 }
 
 #contact-form {
@@ -464,7 +468,7 @@ footer a {
 	#contact-section {
 		flex-wrap: wrap;
 	}
-	#contact-title {
+	#icons {
 		margin: 0 0 20px 0;
 	}
 	#contact-form {
