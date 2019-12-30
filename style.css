@@ -109,8 +109,10 @@ header {
 	height: 100%;
 }
 
-.list-item a:hover {
-	color: white;
+@media (hover: hover) {
+	.list-item a:hover {
+		color: white;
+	}
 }
 
 .nav-hr {
@@ -205,8 +207,10 @@ main {
 	font-size: 4rem;
 }
 
-.icon:hover {
-	color: rgb(231, 231, 231);
+@media (hover: hover) {
+	.icon:hover {
+		color: rgb(231, 231, 231);
+	}
 }
 
 /* About Section */
@@ -280,17 +284,13 @@ main {
 	border: 3px outset rgb(226, 226, 226);
 }
 
-.btn-portfolio:active {
-	background-color: rgba(12, 12, 12, 0.9);
-	text-shadow: 2px 2px 2px black;
-	border: 3px outset rgb(226, 226, 226);
-}
-
-.btn-portfolio:hover {
-	background-color: rgba(231, 231, 231, 0.8);
-	color: black;
-	text-shadow: 2px 2px 2px rgb(112, 112, 112);
-	border: 3px outset rgb(150, 150, 150);
+@media (hover: hover) {
+	.btn-portfolio:hover {
+		background-color: rgba(231, 231, 231, 0.8);
+		color: black;
+		text-shadow: 2px 2px 2px rgb(112, 112, 112);
+		border: 3px outset rgb(150, 150, 150);
+	}
 }
 
 .btn-git {
@@ -391,11 +391,13 @@ main {
 	text-shadow: 2px 2px 2px black;
 }
 
-.submit:hover {
-	background-color: rgb(224, 224, 224);
-	color: black;
-	text-shadow: 2px 2px 2px rgb(87, 87, 87);
-	border-color: rgb(187, 187, 187);
+@media (hover: hover) {
+	.submit:hover {
+		background-color: rgb(224, 224, 224);
+		color: black;
+		text-shadow: 2px 2px 2px rgb(87, 87, 87);
+		border-color: rgb(187, 187, 187);
+	}
 }
 
 /* Footer */
