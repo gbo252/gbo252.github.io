@@ -207,6 +207,10 @@ main {
 	font-size: 4rem;
 }
 
+h2#title-small > code {
+	font-size: 1.5rem;
+}
+
 @media (hover: hover) {
 	.icon:hover {
 		color: rgb(231, 231, 231);
