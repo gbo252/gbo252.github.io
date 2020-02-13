@@ -43,7 +43,7 @@ textarea {
 
 .d-flex-start {
 	display: flex;
-	justify-content: start;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -109,7 +109,7 @@ header {
 	height: 100%;
 }
 
-@media (hover: hover) {
+@media (hover: hover), (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	.list-item a:hover {
 		color: white;
 	}
@@ -123,6 +123,7 @@ header {
 /* Main Section */
 
 main {
+	display: block;
 	max-width: 1300px;
 	margin: 0 auto;
 }
@@ -164,6 +165,7 @@ main {
 	border-radius: 50%;
 	border: 3px outset white;
 	margin: 0 20px;
+	flex-shrink: 0;
 }
 
 #title-grp {
@@ -211,7 +213,7 @@ h2#title-small > code {
 	font-size: 1.5rem;
 }
 
-@media (hover: hover) {
+@media (hover: hover), (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	.icon:hover {
 		color: rgb(231, 231, 231);
 	}
@@ -288,7 +290,7 @@ h2#title-small > code {
 	border: 3px outset rgb(226, 226, 226);
 }
 
-@media (hover: hover) {
+@media (hover: hover), (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	.btn-portfolio:hover {
 		background-color: rgba(231, 231, 231, 0.8);
 		color: black;
@@ -306,6 +308,7 @@ h2#title-small > code {
 	border-radius: 10px;
 	padding: 20px 30px 30px 40px;
 	margin-left: -15px;
+	width: 100%;
 }
 
 .port-text {
@@ -395,7 +398,11 @@ h2#title-small > code {
 	text-shadow: 2px 2px 2px black;
 }
 
-@media (hover: hover) {
+textarea {
+	overflow: auto;
+}
+
+@media (hover: hover), (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	.submit:hover {
 		background-color: rgb(224, 224, 224);
 		color: black;
@@ -518,6 +525,12 @@ footer a {
 	#title-main {
 		font-size: 3.5rem;
 	}
+	#title-small-grp {
+		margin: -20px 0 0 0;
+	}
+	#jumbotron {
+		margin: 40px 0 40px 0;
+	}
 	.section {
 		margin: 0 20px 40px 20px;
 		padding: 20px;
@@ -533,7 +546,7 @@ footer a {
 		margin-bottom: 0px;
 	}
 	.port-text {
-		justify-content: start;
+		justify-content: flex-start;
 		flex-wrap: wrap;
 	}
 	.port-text-about {
@@ -545,5 +558,8 @@ footer a {
 	}
 	#contact-section {
 		margin: 40px 20px;
+	}
+	#contact-title {
+		margin: 0;
 	}
 }
